@@ -1,0 +1,87 @@
+[
+  {
+    "id": "eval-01",
+    "question": "What is the customer refund policy timeframe?",
+    "expected_answer": "Customers are eligible for a 100% full refund if requested within 30 calendar days of initial delivery or activation.",
+    "expected_sources": ["Acme_Employee_and_Customer_Handbook.pdf"],
+    "requires_grounding": true
+  },
+  {
+    "id": "eval-02",
+    "question": "How long does it take to process a refund after items are received?",
+    "expected_answer": "Refunds are processed within 3 to 5 business days back to the original method of payment.",
+    "expected_sources": ["Acme_Employee_and_Customer_Handbook.pdf"],
+    "requires_grounding": true
+  },
+  {
+    "id": "eval-03",
+    "question": "Are custom professional services refundable?",
+    "expected_answer": "No, custom professional services and personalized consulting hours are non-refundable once delivered.",
+    "expected_sources": ["Acme_Employee_and_Customer_Handbook.pdf"],
+    "requires_grounding": true
+  },
+  {
+    "id": "eval-04",
+    "question": "What are the core collaboration hours for remote employees?",
+    "expected_answer": "Core collaboration hours are between 10:00 AM and 3:00 PM Central Time.",
+    "expected_sources": ["Acme_Employee_and_Customer_Handbook.pdf"],
+    "requires_grounding": true
+  },
+  {
+    "id": "eval-05",
+    "question": "What is the equipment stipend for new full-time employees?",
+    "expected_answer": "New full-time employees receive a one-time home office equipment stipend of $1,500 during their first month of employment.",
+    "expected_sources": ["Acme_Employee_and_Customer_Handbook.pdf"],
+    "requires_grounding": true
+  },
+  {
+    "id": "eval-06",
+    "question": "How many days of PTO do full-time employees receive annually?",
+    "expected_answer": "Full-time employees receive 25 days of Paid Time Off (PTO) annually.",
+    "expected_sources": ["Acme_Employee_and_Customer_Handbook.pdf"],
+    "requires_grounding": true
+  },
+  {
+    "id": "eval-07",
+    "question": "What are the password complexity requirements at Acme Corp?",
+    "expected_answer": "Passwords must be at least 14 characters long and contain at least one uppercase letter, one lowercase letter, one digit, and one special symbol.",
+    "expected_sources": ["Acme_IT_Security_Architecture.docx"],
+    "requires_grounding": true
+  },
+  {
+    "id": "eval-08",
+    "question": "How often do employee corporate passwords expire?",
+    "expected_answer": "Passwords expire every 90 days.",
+    "expected_sources": ["Acme_IT_Security_Architecture.docx"],
+    "requires_grounding": true
+  },
+  {
+    "id": "eval-09",
+    "question": "What is the Recovery Time Objective (RTO) for production workloads?",
+    "expected_answer": "The Recovery Time Objective (RTO) is 15 minutes.",
+    "expected_sources": ["Acme_IT_Security_Architecture.docx"],
+    "requires_grounding": true
+  },
+  {
+    "id": "eval-10",
+    "question": "What is the Recovery Point Objective (RPO) for transactional databases?",
+    "expected_answer": "The Recovery Point Objective (RPO) is 1 minute.",
+    "expected_sources": ["Acme_IT_Security_Architecture.docx"],
+    "requires_grounding": true
+  },
+  {
+    "id": "eval-11",
+    "question": "What encryption standard is enforced for data at rest?",
+    "expected_answer": "Data at rest is encrypted with AES-256 using customer-managed KMS keys with annual key rotation.",
+    "expected_sources": ["Acme_IT_Security_Architecture.docx"],
+    "requires_grounding": true
+  },
+  {
+    "id": "eval-12",
+    "question": "What is the company policy on private jet charters?",
+    "expected_answer": "Based on the provided documents in this knowledge base, I do not have enough information to answer this question.",
+    "expected_sources": [],
+    "requires_grounding": false,
+    "should_admit_unknown": true
+  }
+]

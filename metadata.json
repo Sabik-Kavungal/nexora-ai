@@ -1,0 +1,6 @@
+{
+  "name": "Nexora",
+  "description": "Nexora — AI Knowledge & RAG Platform. Production RAG system with pgvector, multi-format document processing, streaming chat, and Hugging Face inference.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

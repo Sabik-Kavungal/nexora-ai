@@ -1,0 +1,162 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  }
+}
+
+/* Base Body Styles */
+body {
+  background-color: #0D1117;
+  color: #F0F6FC;
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+/* Dark scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0D1117;
+}
+::-webkit-scrollbar-thumb {
+  background: #30363D;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #484F58;
+}
+
+/* Light / White Theme Overrides */
+[data-theme="light"] body {
+  background-color: #F8F9FA !important;
+  color: #0F172A !important;
+}
+
+[data-theme="light"] ::-webkit-scrollbar-track {
+  background: #F8F9FA !important;
+}
+[data-theme="light"] ::-webkit-scrollbar-thumb {
+  background: #CBD5E1 !important;
+}
+[data-theme="light"] ::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8 !important;
+}
+
+/* Background remappings for light mode */
+[data-theme="light"] .bg-\[\#0D1117\] {
+  background-color: #F8F9FA !important;
+}
+[data-theme="light"] .bg-\[\#010409\] {
+  background-color: #FFFFFF !important;
+}
+[data-theme="light"] .bg-\[\#161B22\] {
+  background-color: #FFFFFF !important;
+}
+[data-theme="light"] .bg-\[\#21262D\] {
+  background-color: #F1F5F9 !important;
+}
+[data-theme="light"] .bg-\[\#010409\]\/80,
+[data-theme="light"] .bg-\[\#010409\]\/75 {
+  background-color: rgba(15, 23, 42, 0.45) !important;
+}
+
+/* Hover background remappings */
+[data-theme="light"] .hover\:bg-\[\#21262D\]:hover {
+  background-color: #E2E8F0 !important;
+}
+[data-theme="light"] .hover\:bg-\[\#21262D\]\/60:hover {
+  background-color: #F1F5F9 !important;
+}
+[data-theme="light"] .hover\:bg-\[\#30363D\]:hover {
+  background-color: #E2E8F0 !important;
+}
+[data-theme="light"] .hover\:bg-\[\#F85149\]\/10:hover {
+  background-color: #FEE2E2 !important;
+}
+
+/* Border remappings */
+[data-theme="light"] .border-\[\#30363D\] {
+  border-color: #E2E8F0 !important;
+}
+[data-theme="light"] .border-t-\[\#30363D\] {
+  border-top-color: #E2E8F0 !important;
+}
+[data-theme="light"] .border-b-\[\#30363D\] {
+  border-bottom-color: #E2E8F0 !important;
+}
+[data-theme="light"] .border-l-\[\#30363D\] {
+  border-left-color: #E2E8F0 !important;
+}
+[data-theme="light"] .border-r-\[\#30363D\] {
+  border-right-color: #E2E8F0 !important;
+}
+[data-theme="light"] .divide-\[\#30363D\] > :not([hidden]) ~ :not([hidden]) {
+  border-color: #E2E8F0 !important;
+}
+
+/* Typography remappings */
+[data-theme="light"] .text-\[\#F0F6FC\] {
+  color: #0F172A !important;
+}
+[data-theme="light"] .text-\[\#8B949E\] {
+  color: #64748B !important;
+}
+[data-theme="light"] .text-\[\#6E7681\] {
+  color: #94A3B8 !important;
+}
+[data-theme="light"] .hover\:text-\[\#F0F6FC\]:hover {
+  color: #0F172A !important;
+}
+[data-theme="light"] .group:hover .group-hover\:text-white {
+  color: #0F172A !important;
+}
+[data-theme="light"] .placeholder-\[\#8B949E\]::placeholder {
+  color: #94A3B8 !important;
+}
+
+/* Inputs in light mode */
+[data-theme="light"] input.bg-\[\#0D1117\],
+[data-theme="light"] textarea.bg-\[\#0D1117\],
+[data-theme="light"] select.bg-\[\#0D1117\] {
+  background-color: #FFFFFF !important;
+  border-color: #CBD5E1 !important;
+  color: #0F172A !important;
+}
+
+[data-theme="light"] select option {
+  background-color: #FFFFFF !important;
+  color: #0F172A !important;
+}
+
+/* Code blocks in light mode */
+[data-theme="light"] pre.bg-\[\#010409\] {
+  background-color: #F8FAFC !important;
+  color: #0F172A !important;
+}
+[data-theme="light"] pre.bg-\[\#010409\] code {
+  color: #0F172A !important;
+}
+
+/* Light mode table & selection polish */
+[data-theme="light"] ::selection {
+  background-color: rgba(24, 119, 242, 0.25) !important;
+  color: #0F172A !important;
+}
+[data-theme="light"] table tbody tr:hover {
+  background-color: #F1F5F9 !important;
+}
+[data-theme="light"] .bg-\[\#0D1117\]\/60 {
+  background-color: #F1F5F9 !important;
+}
+[data-theme="light"] .border-dashed.border-\[\#30363D\] {
+  border-color: #CBD5E1 !important;
+}
